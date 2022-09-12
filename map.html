@@ -25,24 +25,113 @@
     
   </script>
 </head>
-<body class="bg-[#04010E]">
-    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 items-center container mx-auto">
-        <div class=" text-white">
-        <p>Location : Basundhora</p>            
-        <p>Available Space : 4</p>            
-        <p>Price : 433BDT</p>            
+<body class="bg-gray-900">
+     <!-- navbar design start from here -->
 
+     <nav class="bg-gray-900 border-gray-200 px-2 sm:px-4 py-2.5 ">
+      <div class="container flex flex-wrap justify-between items-center mx-auto ">
+      <a href="https://flowbite.com/" class="flex items-center">
+        
+          <span class="self-center text-xl font-bold whitespace-nowrap text-white">Parking <span class="text-blue-500">Car.</span> </span>
+      </a>
+      <div class="flex md:order-2">
+          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Get started</button>
+          <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+      <div class="hidden justify-between bg-gray-900 items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-900 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 ">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 ">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 ">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- map -->
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3  items-center">
+        <div class=" text-white text-xl shadow-lg bg-gray-800 lg:h-[600px] py-10 px-5 rounded-lg">
+          <form class="flex items-center text-white mb-5">   
+            <label for="voice-search" class="sr-only">Search</label>
+            <div class="relative w-full">
+            
+                <input type="text" id="voice-search" class="bg-gray-600 border border-gray-600 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 p-2.5 " placeholder="Search Location" required=""/>
+                <button type="button" class="flex absolute inset-y-0 right-0 items-center pr-3">
+                   <img class="w-4" src="/Assets/location.svg" alt="" />
+                </button>
+            </div>
+            <button type="submit" class="inline-flex items-center justify-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-[#4506cb] rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+        </form>
+        <div class="flex gap-3 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>
+          <p>United International University</p>
+        </div>       
+                 
+        <div class="flex gap-3 items-center mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          <p>United International University</p>
+        </div>   
+
+        <div class="flex gap-3 items-center mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <p>200</p>
+        </div> 
 
         </div>
         <div class="col-span-2">
-            <div class="container mx-auto  flex justify-center items-center py-10 rounded-lg">
-                <iframe class="rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.582335868314!2d90.44752131478502!3d23.797882884565976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7d8042caf2d%3A0x686fa3e360361ddf!2sUnited%20International%20University!5e0!3m2!1sen!2sbd!4v1662896494552!5m2!1sen!2sbd" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class=" flex justify-center items-center py-10 rounded-lg">
+                <iframe class="rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.582335868314!2d90.44752131478502!3d23.797882884565976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7d8042caf2d%3A0x686fa3e360361ddf!2sUnited%20International%20University!5e0!3m2!1sen!2sbd!4v1662896494552!5m2!1sen!2sbd" width="850" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
             </div>
             
         
         </div>
+        
     </div>
+
+    <div class='container mx-auto bg-gray-800 py-20 rounded-t-[60px]'>
+ 
+      <div class="lg:flex lg:flex-row flex-wrap justify-between lg:gap-20 items-center flex flex-col"  >
+      <div class="flex-shrink-0">
+          <p class="font-bold text-2xl text-white animate__animated animate__fadeInDown animate__delay-1s"> Parking <span class="text-blue-500
+          ">Car.</span></p>
+          </div>
+          <div class="flex flex-col gap-3 mt-4 lg:mt-0">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+      </div>
+  </div>
    
 
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
