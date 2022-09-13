@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Desire Location</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "4rem",
+      },
+    },
+        }
+      }
+    
+  </script>
+</head>
+<body class="bg-gray-900">
+
+   <!-- car owner home page -->
+   <div class="container mt-10 mx-auto">
+    <div class="">
+        <div class="flex justify-between">
+        <div class="flex">
+        <img class="w-14" src="Assets/person.png" alt="" />
+        <div class="flex flex-col">
+        <p class="text-lg pl-2 font-semibold text-white">Rownok Mahbub</p>
+        <p class="text-xs pl-3 font-normal text-white">example@gmail.com</p>
+        </div>
+       
+        </div>
+       <button class="rounded-xl text-white px-4 bg-red-700">Logout</button>
+        </div>
+     
+
+
+       
+      </div>
+<div class="mb-4 border-b border-gray-200 dark:border-gray-700 ">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Dashboard</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Running Rent</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Complete Rent</button>
+        </li>
+       
+    </ul>
+</div>
+<div id="myTabContent">
+    <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800 my-10" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+     
+     <p class="text-white">here we will implement so design</p>
+
+    </div>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800 my-10" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+       
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg py-10">
+            <table class="w-full text-sm text-left text-gray-500 rounded-lg">
+                <thead class="text-xs text-white uppercase bg-slate-900  ">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Product name
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Color
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Category
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Price
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-700 border-b border-gray-600 text-white">
+                        <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="py-4 px-6">
+                            Sliver
+                        </td>
+                        <td class="py-4 px-6">
+                            Laptop
+                        </td>
+                        <td class="py-4 px-6">
+                            $2999
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="booking.html" class="font-medium bg-blue-400 px-4 py-1 rounded-lg hover:bg-blue-600">View</a>
+                        </td>
+                    </tr>
+                  
+                    <tr class="bg-gray-700 border-b border-gray-600 text-white">
+                        <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="py-4 px-6">
+                            Sliver
+                        </td>
+                        <td class="py-4 px-6">
+                            Laptop
+                        </td>
+                        <td class="py-4 px-6">
+                            $2999
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="booking.html" class="font-medium bg-blue-400 px-4 py-1 rounded-lg hover:bg-blue-600">View</a>
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800 my-10" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+     
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg py-10">
+            <table class="w-full text-sm text-left text-gray-500 rounded-lg">
+                <thead class="text-xs text-white uppercase bg-slate-900  ">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Product name
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Color
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Category
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Price
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-700 border-b border-gray-600 text-white">
+                        <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="py-4 px-6">
+                            Sliver
+                        </td>
+                        <td class="py-4 px-6">
+                            Laptop
+                        </td>
+                        <td class="py-4 px-6">
+                            $2999
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="booking.html" class="font-medium bg-blue-400 px-4 py-1 rounded-lg hover:bg-blue-600">View</a>
+                        </td>
+                    </tr>
+                  
+                    <tr class="bg-gray-700 border-b border-gray-600 text-white">
+                        <th scope="row" class="py-4 px-6 font-medium text-white whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="py-4 px-6">
+                            Sliver
+                        </td>
+                        <td class="py-4 px-6">
+                            Laptop
+                        </td>
+                        <td class="py-4 px-6">
+                            $2999
+                        </td>
+                        <td class="py-4 px-6">
+                            <a href="booking.html" class="font-medium bg-blue-400 px-4 py-1 rounded-lg hover:bg-blue-600">View</a>
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+</div>
+
+    
+    </div>
+<!-- footer page -->
+    <div class='container mx-auto bg-gray-800 py-20 rounded-t-[60px]'>
+ 
+      <div class="lg:flex lg:flex-row flex-wrap justify-between lg:gap-20 items-center flex flex-col"  >
+      <div class="flex-shrink-0">
+          <p class="font-bold text-2xl text-white animate__animated animate__fadeInDown animate__delay-1s"> Parking <span class="text-blue-500
+          ">Car.</span></p>
+          </div>
+          <div class="flex flex-col gap-3 mt-4 lg:mt-0">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p class='font-medium text-xl cursor-pointer text-white'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+            <p class='font-medium text-lg cursor-pointer text-gray-300'>Latest Project</p>
+          </div>
+      </div>
+  </div>
+   
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
